@@ -2,13 +2,32 @@
 <html>
 <head>
   <title>Asa</title>
+  <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
+<div class="container main">
 <%= yield %>
-
+</div>
+  <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">asashinoda's app</a>
+       <ul class="nav">
+        <li class="active"><a href="/ideas">chat</a></li>
+        <li class="active"><a href="/ideas">bolg</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    Rails Girls 2013
+  </div>
+</footer>
 </body>
 </html>
